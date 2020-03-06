@@ -1,0 +1,1998 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web:600&display=swap');
+
+* /*Элемент сохраняет заданные размеры, отступы и рамки отрисовываются внутрь элемента*/
+{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 465px) and (max-width: 575px) /*Маленькие экраны, телефоны в книжной ориентации*/
+{
+  body /*Наделить все текстовые элементы цветом близким к silver*/
+  {
+    color: #566f89;
+  }
+
+  body p /*Шрифт *абзацев в теле сайта*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header /*Цвет заднего фона и нижняя грацница шапки*/
+  {
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #A9A4A3;
+  }
+
+  header * /*Значение полей вокруг элементов шапки, также неразрывность всех элементов, в частности номера телефона, чтобы не переносился на новую строку.*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+    padding: 0 0.25em 0 0.2em;
+    white-space: nowrap;
+  }
+
+  header a:hover /*Поменять цвет ссылок шапки при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #social-symbols i /*Значки соц-сетей выравниваются по правому краю, а также увеличены в размере*/
+  {
+    float: right;
+    transform: scale(1.2);
+  }
+
+  #social-symbols i:hover /*Цвет значков соц-сетей при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  nav img /*Значение полей вокруг логотипа компании REEN*/
+  {
+    padding: 7% 0 0 7%;
+  }
+
+  #navbar /*Навигационное меню смещается для мобильных устройств*/
+  {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  #navbar li a /*Изначальный цвет навигационных ссылок*/
+  {
+    color: #566f89;
+  }
+
+  #navbar li a:hover /*Цвет навигационных ссылок при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #reen-logo-head /*Цвет, увелечение, и смещение логотипа REEN под шапкой*/
+  {
+    transform: scale(1.2);
+    height: 135%;
+    margin-left: 7%;
+    padding-bottom: 28%;
+  }
+
+  .searchbar /*Отступы всей поисковой строки*/
+  {
+    margin: 6% 140% 0 2%;
+  }
+
+  .search-field /*Настройки поля поисковой строки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    width: 0;
+    /*height: 40px;*/
+    height: 2.5em;
+    /*margin: 0 0 0 8px;*/
+    margin: 0 0 0 3%;
+    padding: 0;
+    /*border-radius: 50px;*/
+    border-radius: 30%;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .expand-search /*Настройки поля поисковой строки при расширении*/
+  {
+    width: 80%;
+    max-width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: .5rem;
+  }
+
+  svg /*Настройка векторной графики (поисковой строки)*/
+  {
+    /*width: 20px;
+    height: 20px;*/
+    width: 1.24em;
+    height: 1.24em;
+  }
+
+  #button-search/*Настройка кнопки поисковой строки*/
+  {
+    /*border-radius: 50px;*/
+    border-radius: 3em;
+  }
+
+  .button /*Цвет кнопки поисковой строки*/
+  {
+    background-color: #00bc9c;
+  }
+
+  .button:focus /*Цвет кнопки поисковой строки при выделении*/
+  {
+    background-color: #24C08C;
+  }
+
+  .button:hover /*Цвет кнопки поисковой строки при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  main /*Выравнивание текста по центру для всех центральных элементов страницы*/
+  {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 /*Задать насыщенность шрифта для заголовков h1-h4 полужирным*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+  h1, h4 /*Задать цвет заголовков h1, h4 белый*/
+  {
+    color: white;
+  }
+
+  h1 /*Задать размер заголовка MADE FOR DESIGNERS*/
+  {
+    font-size: 2em;
+  }
+
+  article .button /*Изменение шрифта кнопки в основной части*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  [qualities-company] /*Выравнивание текста с иконками характеристик компании по левым и правым границам содержимого параграфа*/
+  {
+    text-align: justify;
+  }
+
+  [qualities-company] i, h3 /*Расположение иконок и заголовков в одной строке*/
+  {
+    display: inline-block;
+  }
+
+  article /*Основная информация о организации*/
+  {
+    /*margin-top: 80px;*/
+    margin-top: 16.8%;
+  }
+
+  article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
+  {
+    background-image: url("../images-elements/big-image.jpg");
+    padding: 15% 0 15%;
+  }
+
+  article .grid-x:not(:first-child)/*Отступы блоков элементов grid-x, кроме первого с элементами от h1 по large button "GET STARTED NOW" включительно.*/
+  {
+    margin: 10% 0 10%;
+  }
+
+  article .grid-x:first-child p /*Цвет текстового абзаца первого элемента основной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  a.large /*Цвет и отступы кнопки GET STARTED NOW*/
+  {
+    background-color: #00bc9c;
+    margin-top: 5%;
+  }
+
+  a.large:hover /*Цвет кнопки GET STARTED NOW при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  h2 /*Цвет заголовков h2*/
+  {
+    color: #566f89;
+  }
+
+  article br/*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article i/*Настройка значков в основной информации*/
+  {
+    color: #24C08C;
+    font-size: 1.8em;
+  }
+
+  section /*Фоновый цвет и значение полей вокруг элементов с изображениями*/
+  {
+    background-color: #f0f3f5;
+    padding: 12% 0 12%;
+  }
+
+  figure:first-child /*Значение полей вокруг первого изображения с подписью*/
+  {
+    /*padding-bottom: 10px;*/
+    padding-bottom: 2.2%;
+  }
+
+  figcaption /*Настройки подписей к изображениям*/
+  {
+    font-family: 'Roboto', sans-serif;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #A9A4A3;
+    /*padding-top: 8px;*/
+    padding-top: 2%;
+  }
+
+  .orbit /*Настройки ширины орбиты и её отступов*/
+  {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  img.orbit-image /*Настройки размера изображений в слайдах орбиты и отступы между ними*/
+  {
+    height: 5.8em;
+    width: 23%;
+  }
+
+  .orbit-bullets > button /*Настройка размеров и цвета точек*/
+  {
+    height: .5em;
+    width: .5em;
+    background-color:#566f89;
+  }
+
+  .orbit-bullets > button.is-active /*Настройка цвета выделенной точки*/
+  {
+    background-color: #00a085;
+  }
+
+  /*#images-slider*/ /*Отступ блока слайдера с картинками*/
+  /*{*/
+    /*margin-top: 20px;*/
+    /*margin-top: 4.2%;
+  }*/
+
+  /*#images-slider li button::before*/ /*Настройка точек для прокрутки в блоке слайдера*/
+  /*{
+    color: #566f89;
+    opacity: 1; *//*Сделать точки непрозрачными*/
+  /*}*/
+
+  /*#images-slider li.slick-active button::before*/ /*Настройка цвета выделенной точки*/
+  /*{
+    color: #00a085;
+  }*/
+
+  /*.slide img*/ /*Настройка изображений в блоке слайдера*/
+  /*{
+    padding: 0 1.5% 0 1.5%;*/
+    /*padding-left: 3px;
+    padding-right: 3px;*/
+    /*height: 100px;*/
+    /*height: 6.5em;
+    width: auto;
+  }*/
+
+  #recruiting /*Настройка отступов блока дополнительной информации о рекрутинге*/
+  {
+    font-family: 'Roboto', sans-serif;
+    margin: 12% 0 12%;
+  }
+
+  #recruiting br /*Убираем переносы в тексте рекрутинга*/
+  {
+    display: none;
+  }
+
+  #contact-information /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding: 8% 0 8%;
+    text-align: center;
+    background-color: #2f4052;
+    color: white;
+  }
+
+  #contact-information p /*Настройка цвета текста абзацев контактной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  #contact-information img:first-of-type /*Настройка значений полей вокруг логотипа REEN в контактной информации*/
+  {
+    padding: 2% 0 4%;
+  }
+
+  #contact-information .cell /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    /*padding-top: 40px;*/
+    padding-top: 8.5%;
+  }
+
+  #more-about-us /*Настройка кнопки More about us*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    color: #a3b1bf;
+    background-color: #2f4052;
+  }
+
+  #more-about-us:hover /*Смена цвета при наведении курсора на кнопку*/
+  {
+    background-color: #2f4052;
+    color: #1DA97A;
+  }
+
+  #more-about-us i /*Значения поля вокруг иконки стрелки в кнопке*/
+  {
+    /*padding-left: 4px;*/
+    padding-left: .4em;
+  }
+
+  #contact-mail /*Цвет ссылки почты*/
+  {
+    color: #a3b1bf;;
+  }
+
+  #contact-mail:hover /*Цвет ссылки почты при наведении курсора*/
+  {
+    color: #1DA97A;
+  }
+
+  #button-subscribe .input-group-field /*Настройка цвета поля ввода почты для подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e5c6c;
+  }
+
+  #button-subscribe .input-group-button > .button /*Изменение шрифта кнопки подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #button-subscribe .input-group-field:hover /*Настройка цвета, при наведении курсора, поля ввода почты для подписки*/
+  {
+    background-color: #4e5c6c;
+  }
+
+  footer /*Настройка подвала сайта*/
+  {
+    background-color: #283645;
+    padding: 4% 0 2%;
+    text-align: center;
+  }
+
+  footer * /*Настройка цвета для всех элементов подвала*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+  }
+
+  footer a:hover /*Настройка цвета ссылок подвал при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  footer li /*Настройка отступа элементов списка навигации в подвале*/
+  {
+    margin:0 auto;
+    font-size: .8em;
+  }
+
+  #back-top img /*Настройка кнопки возвращения к шапке сайта */
+  {
+    transform: scale(0.2);
+    position: fixed;
+    /*bottom:-15px;*/
+    bottom: -1em;
+    right: -18%;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) /*Телефоны в альбомной ориентации, планшеты, дисплеи 576 пикселей до 767*/
+{
+  body /*Наделить все текстовые элементы цветом близким к silver*/
+  {
+    color: #566f89;
+  }
+
+  body p /*Шрифт *абзацев в теле сайта*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header /*Цвет заднего фона и нижняя грацница шапки*/
+  {
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #A9A4A3;
+  }
+
+  header * /*Значение полей вокруг элементов шапки, также неразрывность всех элементов, в частности номера телефона, чтобы не переносился на новую строку.*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+    padding: 0 0.25em 0 0.2em;
+    white-space: nowrap;
+  }
+
+  header a:hover /*Поменять цвет ссылок шапки при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #social-symbols i /*Значки соц-сетей выравниваются по правому краю, а также увеличены в размере*/
+  {
+    float: right;
+    transform: scale(1.2);
+  }
+
+  #social-symbols i:hover /*Цвет значков соц-сетей при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  nav img /*Значение полей вокруг логотипа компании REEN*/
+  {
+    padding: 7% 0 0 7%;
+  }
+
+  #navbar /*Навигационное меню смещается для мобильных устройств*/
+  {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  #navbar li a /*Изначальный цвет навигационных ссылок*/
+  {
+    color: #566f89;
+  }
+
+  #navbar li a:hover /*Цвет навигационных ссылок при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #reen-logo-head /*Цвет, увелечение, и смещение логотипа REEN под шапкой*/
+  {
+    transform: scale(1);
+    height: 135%;
+    padding-bottom: 28%;
+  }
+
+  .searchbar /*Отступы всей поисковой строки*/
+  {
+    margin: 8% 140% 0 2%;
+  }
+
+  .search-field /*Настройки поля поисковой строки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    width: 0;
+    height: 2.5em;
+    margin: 0 0 0 3%;
+    padding: 0;
+    border-radius: 30%;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .expand-search /*Настройки поля поисковой строки при расширении*/
+  {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: .5rem;
+  }
+
+  svg /*Настройка векторной графики (поисковой строки)*/
+  {
+    width: 1.24em;
+    height: 1.24em;
+  }
+
+  #button-search/*Настройка кнопки поисковой строки*/
+  {
+    border-radius: 3em;
+  }
+
+  .button /*Цвет кнопки поисковой строки*/
+  {
+    background-color: #00bc9c;
+  }
+
+  .button:focus /*Цвет кнопки поисковой строки при выделении*/
+  {
+    background-color: #24C08C;
+  }
+
+  .button:hover /*Цвет кнопки поисковой строки при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  main /*Выравнивание текста по центру для всех центральных элементов страницы*/
+  {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 /*Задать насыщенность шрифта для заголовков h1-h4 полужирным*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  h1, h4 /*Задать цвет заголовков h1, h4 белый*/
+  {
+    color: white;
+  }
+
+  h1 /*Задать размер заголовка MADE FOR DESIGNERS*/
+  {
+    font-size: 2em;
+  }
+
+  article .button /*Изменение шрифта кнопки в основной части*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  [qualities-company] /*Выравнивание текста с иконками характеристик компании по левым и правым границам содержимого параграфа*/
+  {
+    text-align: left;
+  }
+
+  [qualities-company] i, h3 /*Расположение иконок и заголовков в одной строке*/
+  {
+    display: inline-block;
+  }
+
+  [qualities-company] p br /*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article/*Основная информация о организации*/
+  {
+    margin-top: 16.8%;
+  }
+
+  article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
+  {
+    background-image: url("../images-elements/big-image.jpg");
+    padding: 15% 0 15%;
+  }
+
+  article .grid-x:not(:first-child)/*Отступы блоков элементов grid-x, кроме первого с элементами от h1 по large button "GET STARTED NOW" включительно.*/
+  {
+    margin: 10% 0 10%;
+  }
+
+  article .grid-x:first-child p /*Цвет текстового абзаца первого элемента основной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  a.large /*Цвет и отступы кнопки GET STARTED NOW*/
+  {
+    background-color: #00bc9c;
+    margin-top: 5%;
+  }
+
+  a.large:hover /*Цвет кнопки GET STARTED NOW при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  h2 /*Цвет заголовков h2*/
+  {
+    color: #566f89;
+  }
+
+  article br/*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article i/*Настройка значков в основной информации*/
+  {
+    color: #24C08C;
+    font-size: 1.8em;
+  }
+
+  section /*Фоновый цвет и значение полей вокруг элементов с изображениями*/
+  {
+    background-color: #f0f3f5;
+    padding: 12% 0 12%;
+  }
+
+  figure:first-child /*Значение полей вокруг первого изображения с подписью*/
+  {
+    padding-bottom: 2.2%;
+  }
+
+  figcaption /*Настройки подписей к изображениям*/
+  {
+    font-family: 'Roboto', sans-serif;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #A9A4A3;
+    padding-top: 2%;
+  }
+
+  .orbit /*Настройки ширины орбиты и её отступов*/
+  {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  img.orbit-image /*Настройки размера изображений в слайдах орбиты и отступы между ними*/
+  {
+    height: 7.6em;
+    width: 23%;
+  }
+
+  .orbit-bullets > button /*Настройка размеров и цвета точек*/
+  {
+    height: .5em;
+    width: .5em;
+    background-color:#566f89;
+  }
+
+  .orbit-bullets > button.is-active /*Настройка цвета выделенной точки*/
+  {
+    background-color: #00a085;
+  }
+
+  /*#images-slider*/ /*Отступ блока слайдера с картинками*/
+  /*{
+    margin-top: 4.2%;
+  }*/
+
+  /*#images-slider li button::before*/ /*Настройка точек для прокрутки в блоке слайдера*/
+  /*{
+    color: #566f89;
+    opacity: 1;*/ /*Сделать точки непрозрачными*/
+  /*}*/
+
+  /*#images-slider li.slick-active button::before*/ /*Настройка цвета выделенной точки*/
+  /*{
+    color: #00a085;
+  }*/
+
+  /*.slide img*/ /*Настройка изображений в блоке слайдера*/
+  /*{
+    padding: 0 1.5% 0 1.5%;
+    height: 6.5em;
+    width: auto;
+  }*/
+
+  #recruiting /*Настройка отступов блока дополнительной информации о рекрутинге*/
+  {
+    font-family: 'Roboto', sans-serif;
+    margin: 12% 0 12%;
+  }
+
+  #recruiting br /*Убираем переносы в тексте рекрутинга*/
+  {
+    display: none;
+  }
+
+  #contact-information /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding: 8% 0 8%;
+    background-color: #2f4052;
+    color: white;
+    text-align: center;
+  }
+
+  #contact-information p br /*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  #contact-information p /*Настройка цвета текста абзацев контактной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  #contact-information img:first-of-type /*Настройка значений полей вокруг логотипа REEN в контактной информации*/
+  {
+    padding: 2% 0 4%;
+  }
+
+  #contact-information .cell /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding-top: 8.5%;
+  }
+
+  #more-about-us /*Настройка кнопки More about us*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    color: #a3b1bf;
+    background-color: #2f4052;
+    padding-left: 0;
+  }
+
+  #more-about-us:hover /*Смена цвета при наведении курсора на кнопку*/
+  {
+    background-color: #2f4052;
+    color: #1DA97A;
+  }
+
+  #more-about-us i /*Значения поля вокруг иконки стрелки в кнопке*/
+  {
+    padding-left: .4em;
+  }
+
+  #contact-mail /*Цвет ссылки почты*/
+  {
+    color: #a3b1bf;;
+  }
+
+  #contact-mail:hover /*Цвет ссылки почты при наведении курсора*/
+  {
+    color: #1DA97A;
+  }
+
+  #button-subscribe .input-group-field /*Настройка цвета и ширины поля ввода почты для подписки; шрифта*/
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e5c6c;
+    width: 100%;
+  }
+
+  #button-subscribe .input-group-button > .button /*Изменение шрифта текста кнопки подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #button-subscribe .input-group-field:hover /*Настройка цвета, при наведении курсора, поля ввода почты для подписки*/
+  {
+    background-color: #4e5c6c;
+  }
+
+  footer /*Настройка подвала сайта*/
+  {
+    background-color: #283645;
+    padding: 4% 0 2%;
+    text-align: center;
+  }
+
+  footer * /*Настройка цвета для всех элементов подвала*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+  }
+
+  footer a:hover /*Настройка цвета ссылок подвал при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  footer li /*Настройка отступа элементов списка навигации в подвале*/
+  {
+    margin:0 auto;
+    font-size: 1em;
+  }
+
+  #back-top img /*Настройка кнопки возвращения к шапке сайта */
+  {
+    transform: scale(0.2);
+    position: fixed;
+    bottom: -1em;
+    right: -11%;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) /*Планшеты, ПК, дисплей 768 пикселей до 991*/
+{
+  body /*Наделить все текстовые элементы цветом близким к silver*/
+  {
+    color: #566f89;
+  }
+
+  body p /*Шрифт *абзацев в теле сайта*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header /*Цвет заднего фона и нижняя грацница шапки*/
+  {
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #A9A4A3;
+  }
+
+  header * /*Значение полей вокруг элементов шапки, также неразрывность всех элементов, в частности номера телефона, чтобы не переносился на новую строку.*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+    padding: 0 0.3em 0 0.3em;
+    white-space: nowrap;
+  }
+
+  header a:hover /*Поменять цвет ссылок шапки при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #social-symbols i /*Значки соц-сетей выравниваются по правому краю, а также увеличены в размере*/
+  {
+    float: right;
+    transform: scale(1.2);
+  }
+
+  #social-symbols i:hover /*Цвет значков соц-сетей при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #reen-logo-head /*Цвет, увелечение, и смещение логотипа REEN под шапкой*/
+  {
+    transform: scale(1.2);
+    margin: 8% 0 0 10%;
+  }
+
+  #navbar /*Настройки навигационного меню*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0.8em 0 0 -2em;
+  }
+
+  #navbar li /*Изменение отступов между элементами навигационного меню*/
+  {
+    margin:0 -0.6em;
+  }
+
+  /*#navbar li:nth-of-type(-n+4)
+  {
+    margin:0 -.8em;
+  }*/
+
+  #navbar li a /*Изначальный цвет навигационных ссылок*/
+  {
+    color: #566f89;
+  }
+
+  #navbar li a:hover /*Цвет навигационных ссылок при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  .searchbar /*Отступы всей поисковой строки*/
+  {
+    margin: 4% 0 0 14%;
+  }
+
+  .search-field /*Настройки поля поисковой строки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    width: 0;
+    height: 2.5em;
+    margin: 0 0 0 2%;
+    padding: 0;
+    border-radius: 30%;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .expand-search /*Настройки поля поисковой строки при расширении*/
+  {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: .5rem;
+  }
+
+  svg /*Настройка векторной графики (поисковой строки)*/
+  {
+    width: 1.24em;
+    height: 1.24em;
+  }
+
+  #button-search/*Настройка кнопки поисковой строки*/
+  {
+    border-radius: 3em;
+  }
+
+  .button /*Цвет кнопки поисковой строки*/
+  {
+    background-color: #00bc9c;
+  }
+
+  .button:focus /*Цвет кнопки поисковой строки при выделении*/
+  {
+    background-color: #24C08C;
+  }
+
+  .button:hover /*Цвет кнопки поисковой строки при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  main /*Выравнивание текста по центру для всех центральных элементов страницы*/
+  {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 /*Задать насыщенность шрифта для заголовков h1-h4 полужирным*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+  h1, h4 /*Задать цвет заголовков h1, h4 белый*/
+  {
+    color: white;
+  }
+
+  h1 /*Задать размер заголовка MADE FOR DESIGNERS*/
+  {
+    font-size: 2em;
+  }
+
+  [qualities-company] /*Выравнивание текста с иконками характеристик компании по левым и правым границам содержимого параграфа*/
+  {
+    text-align: justify;
+  }
+
+  [qualities-company] i, h3 /*Расположение иконок и заголовков в одной строке*/
+  {
+    display: inline-block;
+  }
+
+  [qualities-company] p br /*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article/*Основная информация о организации(отступы)*/
+  {
+    margin-top: 8%;
+  }
+
+  article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
+  {
+    background-image: url("../images-elements/big-image.jpg");
+    padding: 15% 0 15%;
+  }
+
+  article .grid-x:not(:first-child)/*Отступы блоков элементов grid-x, кроме первого с элементами от h1 по large button "GET STARTED NOW" включительно.*/
+  {
+    margin: 10% 0 10%;
+  }
+
+  article .grid-x:first-child p /*Цвет текстового абзаца первого элемента основной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  a.large /*Цвет и отступы кнопки GET STARTED NOW*/
+  {
+    background-color: #00bc9c;
+    margin-top: 5%;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  a.large:hover /*Цвет кнопки GET STARTED NOW при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  h2 /*Цвет заголовков h2*/
+  {
+    color: #566f89;
+  }
+
+  article br/*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article i/*Настройка значков в основной информации*/
+  {
+    color: #24C08C;
+    font-size: 1.8em;
+  }
+
+  section /*Фоновый цвет и значение полей вокруг элементов с изображениями*/
+  {
+    background-color: #f0f3f5;
+    padding: 12% 0 12%;
+  }
+
+  figcaption /*Настройки подписей к изображениям*/
+  {
+    font-family: 'Roboto', sans-serif;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #A9A4A3;
+    padding-top: 2%;
+  }
+
+  .orbit /*Настройки ширины орбиты и её отступов*/
+  {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  img.orbit-image /*Настройки размера изображений в слайдах орбиты и отступы между ними*/
+  {
+    height: 9em;
+    width: 23%;
+  }
+
+  .orbit-bullets > button /*Настройка размеров и цвета точек*/
+  {
+    height: .5em;
+    width: .5em;
+    background-color:#566f89;
+  }
+
+  .orbit-bullets > button.is-active /*Настройка цвета выделенной точки*/
+  {
+    background-color: #00a085;
+  }
+
+  /*#images-slider*/ /*Отступ блока слайдера с картинками*/
+  /*{
+    margin-top: 8%;
+  }*/
+
+  /*#images-slider li button::before*/ /*Настройка точек для прокрутки в блоке слайдера*/
+  /*{
+    color: #566f89;
+    opacity: 1;*/ /*Сделать точки непрозрачными*/
+  /*}*/
+
+  /*#images-slider li.slick-active button::before*/ /*Настройка цвета выделенной точки*/
+  /*{
+    color: #00a085;
+  }*/
+
+  /*.slide img*/ /*Настройка изображений в блоке слайдера*/
+  /*{
+    padding: 0 1.5% 0 1.5%;
+    height: 8em;
+    width: 14em;
+  }*/
+
+  #recruiting /*Настройка отступов блока дополнительной информации о рекрутинге*/
+  {
+    font-family: 'Roboto', sans-serif;
+    margin: 12% 0 12%;
+  }
+
+  #recruiting .button /*Настройка размера шрифта кнопки о рекрутинге*/
+  {
+    font-size: 1em;
+  }
+
+  #recruiting br /*Убираем переносы в тексте рекрутинга*/
+  {
+    display: none;
+  }
+
+  #contact-information /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding: 8% 0 8%;
+    text-align: center;
+    background-color: #2f4052;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  h4 /*Изменение размера шрифта заголовков в контакной информации*/
+  {
+    font-size: 1.8em;
+  }
+
+  #contact-information p /*Настройка цвета текста абзацев контактной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  #contact-information img:first-of-type /*Настройка значений полей вокруг логотипа REEN в контактной информации*/
+  {
+    padding: 2% 0 4%;
+  }
+
+  #contact-information .cell /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding-top: 8.5%;
+  }
+
+  #more-about-us /*Настройка кнопки More about us*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: .75em;
+    color: #a3b1bf;
+    background-color: #2f4052;
+  }
+
+  #more-about-us:hover /*Смена цвета при наведении курсора на кнопку*/
+  {
+    background-color: #2f4052;
+    color: #1DA97A;
+  }
+
+  #more-about-us i /*Значения поля вокруг иконки стрелки в кнопке*/
+  {
+    padding-left: .4em;
+  }
+
+  #contact-mail /*Цвет ссылки почты*/
+  {
+    color: #a3b1bf;;
+  }
+
+  #contact-mail:hover /*Цвет ссылки почты при наведении курсора*/
+  {
+    color: #1DA97A;
+  }
+
+  #button-subscribe .input-group-field /*Настройка цвета поля ввода почты для подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e5c6c;
+  }
+
+  #button-subscribe .input-group-button > .button /*Изменение шрифта текста кнопки подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #button-subscribe .input-group-field:hover /*Настройка цвета, при наведении курсора, поля ввода почты для подписки*/
+  {
+    background-color: #4e5c6c;
+  }
+
+  footer /*Настройка подвала сайта*/
+  {
+    background-color: #283645;
+    padding: 4% 0 2%;
+    text-align: center;
+  }
+
+  footer * /*Настройка цвета для всех элементов подвала*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+  }
+
+  footer a:hover /*Настройка цвета ссылок подвал при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  footer li /*Настройка отступа элементов списка навигации в подвале*/
+  {
+    margin: 0 auto;
+  }
+
+  #back-top img /*Настройка кнопки возвращения к шапке сайта */
+  {
+    transform: scale(0.2);
+    position: fixed;
+    bottom: -4%;
+    right: -8%;
+    z-index: 20;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) /*ПК, дисплей 992 пикселейдо 1199*/
+{
+  body /*Наделить все текстовые элементы цветом близким к silver*/
+  {
+    color: #566f89;
+  }
+
+  body p /*Шрифт *абзацев в теле сайта*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header /*Цвет заднего фона и нижняя грацница шапки*/
+  {
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #A9A4A3;
+  }
+
+  header * /*Значение полей вокруг элементов шапки, также неразрывность всех элементов, в частности номера телефона, чтобы не переносился на новую строку.*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+    padding: 0 0.3em 0 0.3em;
+    white-space: nowrap;
+  }
+
+  header a:hover /*Поменять цвет ссылок шапки при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #social-symbols i /*Значки соц-сетей выравниваются по правому краю, а также увеличены в размере*/
+  {
+    float: right;
+    transform: scale(1.2);
+  }
+
+  #social-symbols i:hover /*Цвет значков соц-сетей при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #reen-logo-head /*Цвет, увелечение, и смещение логотипа REEN под шапкой*/
+  {
+    transform: scale(1.1);
+    margin: 8% 0 0 10%;
+  }
+
+  #navbar /*Настройка навигационного меню*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 1.2em;
+  }
+
+  #navbar li /*Изменение отступов между элментами навигационного меню*/
+  {
+    margin: 0 -0.6em;
+  }
+
+  #navbar li a /*Изначальный цвет навигационных ссылок*/
+  {
+    color: #566f89;
+  }
+
+  #navbar li a:hover /*Цвет навигационных ссылок при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  .searchbar /*Отступы всей поисковой строки*/
+  {
+    margin: 4% 0 0 2%;
+  }
+
+  .search-field /*Настройки поля поисковой строки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    width: 0;
+    height: 2.5em;
+    margin: 0 0 0 2%;
+    padding: 0;
+    border-radius: 30%;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .expand-search /*Настройки поля поисковой строки при расширении*/
+  {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: .5rem;
+  }
+
+  svg /*Настройка векторной графики (поисковой строки)*/
+  {
+    width: 1.24em;
+    height: 1.24em;
+  }
+
+  #button-search /*Настройка кнопки поисковой строки*/
+  {
+    border-radius: 3em;
+  }
+
+  .button /*Цвет кнопки поисковой строки*/
+  {
+    background-color: #00bc9c;
+  }
+
+  .button:focus /*Цвет кнопки поисковой строки при выделении*/
+  {
+    background-color: #24C08C;
+  }
+
+  .button:hover /*Цвет кнопки поисковой строки при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  main /*Выравнивание текста по центру для всех центральных элементов страницы*/
+  {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 /*Задать насыщенность шрифта для заголовков h1-h4 полужирным*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+  h1, h4 /*Задать цвет заголовков h1, h4 белый*/
+  {
+    color: white;
+  }
+
+  h1 /*Задать размер заголовка MADE FOR DESIGNERS*/
+  {
+    font-size: 2em;
+  }
+
+  [qualities-company] /*Выравнивание текста с иконками характеристик компании по левым и правым границам содержимого параграфа*/
+  {
+    text-align: justify;
+  }
+
+  [qualities-company] i, h3 /*Расположение иконок и заголовков в одной строке*/
+  {
+    display: inline-block;
+  }
+
+  [qualities-company] p br /*Убрать перевод строки абзацев в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article /*Основная информация о организации*/
+  {
+    margin-top: 8%;
+  }
+
+  article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
+  {
+    background-image: url("../images-elements/big-image.jpg");
+    padding: 13% 0;
+  }
+
+  article .grid-x:not(:first-child) /*Отступы блоков элементов grid-x, кроме первого с элементами от h1 по large button "GET STARTED NOW" включительно.*/
+  {
+    margin: 10% 0 10%;
+  }
+
+  article .grid-x:first-child p /*Цвет текстового абзаца первого элемента основной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  a.large /*Цвет и отступы кнопки GET STARTED NOW*/
+  {
+    background-color: #00bc9c;
+    margin-top: 5%;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  a.large:hover /*Цвет кнопки GET STARTED NOW при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  h2 /*Цвет заголовков h2*/
+  {
+    color: #566f89;
+  }
+
+  article br /*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article i /*Настройка значков в основной информации*/
+  {
+    color: #24C08C;
+    font-size: 1.8em;
+  }
+
+  section /*Фоновый цвет и значение полей вокруг элементов с изображениями*/
+  {
+    background-color: #f0f3f5;
+    padding: 10% 0;
+  }
+
+  figure:first-child /*Значение полей вокруг первого изображения с подписью*/
+  {
+    padding-bottom: 2.2%;
+  }
+
+  figcaption /*Настройки подписей к изображениям*/
+  {
+    font-family: 'Roboto', sans-serif;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #A9A4A3;
+    padding-top: 2%;
+  }
+
+  .orbit /*Настройки ширины орбиты и её отступов*/
+  {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  img.orbit-image /*Настройки размера изображений в слайдах орбиты и отступы между ними*/
+  {
+    height: 10.5em;
+    width: 23%;
+  }
+
+  .orbit-bullets > button /*Настройка размеров и цвета точек*/
+  {
+    height: .6em;
+    width: .6em;
+    background-color:#566f89;
+  }
+
+  .orbit-bullets > button.is-active /*Настройка цвета выделенной точки*/
+  {
+    background-color: #00a085;
+  }
+
+  /*#images-slider*/ /*Отступ блока слайдера с картинками*/
+  /*{
+    margin-top: 8%;
+  }*/
+
+  /*#images-slider li button::before*/ /*Настройка точек для прокрутки в блоке слайдера*/
+  /*{
+    color: #566f89;
+    opacity: 1;*/ /*Сделать точки непрозрачными*/
+  /*}*/
+
+  /*#images-slider li.slick-active button::before*/ /*Настройка цвета выделенной точки*/
+  /*{
+    color: #00a085;
+  }*/
+
+  /*.slide img*/ /*Настройка изображений в блоке слайдера*/
+  /*{
+    padding: 0 1.5% 0 1.5%;
+    height: 10em;
+    width: 16em;
+  }*/
+
+  #recruiting /*Настройка отступов блока дополнительной информации о рекрутинге*/
+  {
+    font-family: 'Roboto', sans-serif;
+    margin: 12% 0 12%;
+  }
+
+  #recruiting .button /*Изменение размера шрифта кнопки о рекрутинге*/
+  {
+    font-size: 1em;
+  }
+
+  #recruiting br /*Убираем переносы в тексте рекрутинга*/
+  {
+    display: none;
+  }
+
+  #contact-information /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding: 4% 0;
+    text-align: center;
+    background-color: #2f4052;
+    color: white;
+    /*font-size: 1.2em;*/
+  }
+
+  h4 /*Изменение размера шрифта заголовков в контакной информации*/
+  {
+    /*font-size: 1.8em;*/
+  }
+
+  #contact-information p /*Настройка цвета текста абзацев контактной информации*/
+  {
+    color: #a3b1bf;
+    font-size: 0.9em;
+  }
+
+  #contact-information img:first-of-type /*Настройка значений полей вокруг логотипа REEN в контактной информации*/
+  {
+    padding: 2% 0 4%;
+  }
+
+  #contact-information .cell /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding-top: 8.5%;
+  }
+
+  #more-about-us /*Настройка кнопки More about us*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: .75em;
+    color: #a3b1bf;
+    background-color: #2f4052;
+  }
+
+  #more-about-us:hover /*Смена цвета при наведении курсора на кнопку*/
+  {
+    background-color: #2f4052;
+    color: #1DA97A;
+  }
+
+  #more-about-us i /*Значения поля вокруг иконки стрелки в кнопке*/
+  {
+    padding-left: .4em;
+  }
+
+  #contact-mail /*Цвет ссылки почты*/
+  {
+    color: #a3b1bf;;
+  }
+
+  #contact-mail:hover /*Цвет ссылки почты при наведении курсора*/
+  {
+    color: #1DA97A;
+  }
+
+  #button-subscribe .input-group-field /*Настройка цвета поля ввода почты для подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e5c6c;
+    font-size: 0.7em;
+  }
+
+  #button-subscribe .input-group-button > .button /*Изменение шрифта текста кнопки подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+  }
+
+  #button-subscribe .input-group-field:hover /*Настройка цвета, при наведении курсора, поля ввода почты для подписки*/
+  {
+    background-color: #4e5c6c;
+  }
+
+  footer /*Настройка подвала сайта*/
+  {
+    background-color: #283645;
+    padding: 1.5% 0;
+    text-align: center;
+  }
+
+  footer * /*Настройка цвета для всех элементов подвала*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+  }
+
+  footer a:hover /*Настройка цвета ссылок подвал при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  footer li /*Настройка отступа элементов списка навигации в подвале*/
+  {
+    margin: 0 auto;
+  }
+
+  #back-top img /*Настройка кнопки возвращения к шапке сайта */
+  {
+    transform: scale(0.2);
+    position: fixed;
+    bottom: -4%;
+    right: -6%;
+    z-index: 20;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1920px)
+{
+  body /*Наделить все текстовые элементы цветом близким к silver*/
+  {
+    color: #566f89;
+  }
+
+  body p /*Шрифт *абзацев в теле сайта*/
+  {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header /*Цвет заднего фона и нижняя грацница шапки*/
+  {
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #A9A4A3;
+  }
+
+  header * /*Значение полей вокруг элементов шапки, также неразрывность всех элементов, в частности номера телефона, чтобы не переносился на новую строку.*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+    padding: 0 0.3em 0 0.3em;
+    white-space: nowrap;
+  }
+
+  header a:hover /*Поменять цвет ссылок шапки при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #social-symbols i /*Значки соц-сетей выравниваются по правому краю, а также увеличены в размере*/
+  {
+    float: right;
+    transform: scale(1.2);
+  }
+
+  #social-symbols i:hover /*Цвет значков соц-сетей при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #reen-logo-head /*Цвет, увелечение, и смещение логотипа REEN под шапкой*/
+  {
+    transform: scale(1.4);
+    margin: 8% 0 0 35%;
+  }
+
+  #navbar /*Навигационное меню смещается для мобильных устройств*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 1.2em;
+  }
+
+  #navbar li /*Изменение отступов между элментами навигационного меню*/
+  {
+    margin:0 -0.6em;
+  }
+
+  #navbar li a /*Изначальный цвет навигационных ссылок*/
+  {
+    color: #566f89;
+  }
+
+  #navbar li a:hover /*Цвет навигационных ссылок при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  .searchbar /*Отступы всей поисковой строки*/
+  {
+    margin: 3.6% 0 0 -3.8%;
+  }
+
+  .search-field /*Настройки поля поисковой строки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    width: 0;
+    height: 2.5em;
+    margin: 0 0 0 2%;
+    padding: 0;
+    border-radius: 30%;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .expand-search /*Настройки поля поисковой строки при расширении*/
+  {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    padding: .5rem;
+  }
+
+  svg /*Настройка векторной графики (поисковой строки)*/
+  {
+    width: 1.24em;
+    height: 1.24em;
+  }
+
+  #button-search/*Настройка кнопки поисковой строки*/
+  {
+    border-radius: 3em;
+  }
+
+  .button /*Цвет кнопки поисковой строки*/
+  {
+    background-color: #00bc9c;
+  }
+
+  .button:focus /*Цвет кнопки поисковой строки при выделении*/
+  {
+    background-color: #24C08C;
+  }
+
+  .button:hover /*Цвет кнопки поисковой строки при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  main /*Выравнивание текста по центру для всех центральных элементов страницы*/
+  {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 /*Задать насыщенность шрифта для заголовков h1-h4 полужирным*/
+  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+
+  h1, h4 /*Задать цвет заголовков h1, h4 белый*/
+  {
+    color: white;
+  }
+
+  h1 /*Задать размер заголовка MADE FOR DESIGNERS*/
+  {
+    font-size: 2em;
+  }
+
+  [qualities-company] /*Выравнивание текста с иконками характеристик компании по левым и правым границам содержимого параграфа*/
+  {
+    text-align: justify;
+  }
+
+  [qualities-company] i, h3
+  {
+    display: inline-block;
+  }
+
+  [qualities-company] p br /*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article/*Основная информация о организации*/
+  {
+    margin-top: 8%;
+  }
+
+  article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
+  {
+    background-image: url("../images-elements/big-image.jpg");
+    padding: 28% 0;
+  }
+
+  article .grid-x:not(:first-child)/*Отступы блоков элементов grid-x, кроме первого с элементами от h1 по large button "GET STARTED NOW" включительно.*/
+  {
+    margin: 6% 0;
+  }
+
+  article .grid-x:first-child p /*Цвет текстового абзаца первого элемента основной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  article .grid-x:last-child .cell:first-child
+  {
+    padding: 4em 0;
+  }
+
+  a.large /*Цвет и отступы кнопки GET STARTED NOW*/
+  {
+    background-color: #00bc9c;
+    margin-top: 5%;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  a.large:hover /*Цвет кнопки GET STARTED NOW при наведении курсора*/
+  {
+    background-color: #00a085;
+  }
+
+  h2 /*Цвет заголовков h2*/
+  {
+    color: #566f89;
+  }
+
+  article br/*Убрать перевод строки в основной информации для лучшего отображения*/
+  {
+    display: none;
+  }
+
+  article i/*Настройка значков в основной информации*/
+  {
+    color: #24C08C;
+    font-size: 1.8em;
+  }
+
+  section /*Фоновый цвет и значение полей вокруг элементов с изображениями*/
+  {
+    background-color: #f0f3f5;
+    padding: 8% 0;
+  }
+
+  figure:first-child /*Значение полей вокруг первого изображения с подписью*/
+  {
+    padding-bottom: 2.2%;
+  }
+
+  figcaption /*Настройки подписей к изображениям*/
+  {
+    font-family: 'Roboto', sans-serif;
+    height: 4rem;
+    background-color: white;
+    border-bottom: 1px solid #A9A4A3;
+    padding-top: 2%;
+  }
+
+  .orbit /*Настройки ширины орбиты и её отступов*/
+  {
+    margin: 5% auto 0;
+    width: 100%;
+  }
+
+  img.orbit-image /*Настройки размера изображений в слайдах орбиты и отступы между ними*/
+  {
+    height: 13.5em;
+    width: 23%;
+  }
+
+  .orbit-bullets > button /*Настройка размеров и цвета точек*/
+  {
+    height: .6em;
+    width: .6em;
+    background-color:#566f89;
+  }
+
+  .orbit-bullets > button.is-active /*Настройка цвета выделенной точки*/
+  {
+    background-color: #00a085;
+  }
+
+  /*#images-slider*/ /*Отступ блока слайдера с картинками*/
+  /*{
+    margin-top: 8%;
+  }*/
+
+  /*#images-slider li button::before*/ /*Настройка точек для прокрутки в блоке слайдера*/
+  /*{
+    color: #566f89;
+    opacity: 1;*/ /*Сделать точки непрозрачными*/
+  /*}*/
+
+  /*#images-slider li.slick-active button::before*/ /*Настройка цвета выделенной точки*/
+  /*{
+    color: #00a085;
+  }*/
+
+  /*.slide img*/ /*Настройка изображений в блоке слайдера*/
+  /*{
+    padding: 0 1.5% 0 1.5%;
+    height: 14em;
+    width: 22em;
+  }*/
+
+  #recruiting /*Настройка отступов блока дополнительной информации о рекрутинге*/
+  {
+    font-family: 'Roboto', sans-serif;
+    margin: 12% 0 12%;
+  }
+
+  #recruiting .button /*Настройка размера шрифта кнопки о рекрутинге*/
+  {
+    font-size: 1em;
+  }
+
+  #recruiting br /*Убираем переносы в тексте рекрутинга*/
+  {
+    display: none;
+  }
+
+  #contact-information /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding: 4% 0;
+    text-align: left;
+    background-color: #2f4052;
+    color: white;
+  }
+
+  #contact-information p /*Настройка цвета текста абзацев контактной информации*/
+  {
+    color: #a3b1bf;
+  }
+
+  #contact-information img:first-of-type /*Настройка значений полей вокруг логотипа REEN в контактной информации*/
+  {
+    padding: 2% 0 4%;
+  }
+
+  #contact-information .cell /*Настройка значений полей вокруг элементов блока контактной информации*/
+  {
+    padding-top: 8.5%;
+  }
+
+  #more-about-us /*Настройка кнопки More about us*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: .75em;
+    color: #a3b1bf;
+    background-color: #2f4052;
+    padding-left: 0;
+  }
+
+  #more-about-us:hover /*Смена цвета при наведении курсора на кнопку*/
+  {
+    background-color: #2f4052;
+    color: #1DA97A;
+  }
+
+  #more-about-us i /*Значения поля вокруг иконки стрелки в кнопке*/
+  {
+    padding-left: .4em;
+  }
+
+  #contact-mail /*Цвет ссылки почты*/
+  {
+    color: #a3b1bf;;
+  }
+
+  #contact-mail:hover /*Цвет ссылки почты при наведении курсора*/
+  {
+    color: #1DA97A;
+  }
+
+  #button-subscribe .input-group-field /*Настройка цвета поля ввода почты для подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e5c6c;
+    font-size: 0.8em;
+  }
+
+  #button-subscribe .input-group-button > .button /*Изменение шрифта текста кнопки подписки*/
+  {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+  }
+
+  #button-subscribe .input-group-field:hover /*Настройка цвета, при наведении курсора, поля ввода почты для подписки*/
+  {
+    background-color: #4e5c6c;
+  }
+
+  footer /*Настройка подвала сайта*/
+  {
+    background-color: #283645;
+    padding: 2% 0;
+    text-align: center;
+  }
+
+  footer * /*Настройка цвета для всех элементов подвала*/
+  {
+    font-family: 'Roboto', sans-serif;
+    color: #566f89;
+  }
+
+  footer a:hover /*Настройка цвета ссылок подвал при наведении курсора*/
+  {
+    color: #00bc9c;
+  }
+
+  #back-top img /*Настройка кнопки возвращения к шапке сайта */
+  {
+    transform: scale(0.2);
+    position: fixed;
+    bottom: -4%;
+    right: -4%;
+    z-index: 20;
+  }
+}
