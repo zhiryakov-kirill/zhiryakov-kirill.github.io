@@ -182,7 +182,7 @@
 
   article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
   {
-    background-image: url("../images-elements/big-image.jpg");
+    background-image: url("../images-elements/big-image.webp");
     padding: 15% 0 15%;
   }
 
@@ -583,7 +583,7 @@
 
   article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
   {
-    background-image: url("../images-elements/big-image.jpg");
+    background-image: url("../images-elements/big-image.webp");
     padding: 15% 0 15%;
   }
 
@@ -979,7 +979,7 @@
 
   article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
   {
-    background-image: url("../images-elements/big-image.jpg");
+    background-image: url("../images-elements/big-image.webp");
     padding: 15% 0 15%;
   }
 
@@ -1369,7 +1369,7 @@
 
   article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
   {
-    background-image: url("../images-elements/big-image.jpg");
+    background-image: url("../images-elements/big-image.webp");
     padding: 13% 0;
   }
 
@@ -1767,7 +1767,7 @@
 
   article .grid-x:first-child /*Фоновое изображение и значение полей вокруг - первого элемента основной информации*/
   {
-    background-image: url("../images-elements/big-image.jpg");
+    background-image: url("../images-elements/big-image.webp");
     padding: 28% 0;
   }
 
